@@ -152,14 +152,16 @@ header {
 .xhome {
     float: right;
     margin-top: -50px;
-    color: lightgray
+    color: lightgray;
+    padding-right: 25px
 }
 .menu-input {
     margin-left: 10%;
 }
 .food {
     list-style-type: none;
-    font-size: 20px
+    font-size: 20px;
+    padding-left: 60px
 }
 .loginForm {
     background: tan;
