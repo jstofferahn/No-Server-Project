@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="zach">
+    <head>
+        <title>Fish Pit Sushi</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="http://i.imgur.com/phtaxeL.jpg" class="black-fish-pit-logo">
+            <ul class="top-contact">
+                <li>(801) 529-6675</li>
+                <li>4632 College Avenue
+                    <br>San Diego, CA 92116
+                </li>
+            </ul>
+            
+            
+        </header>
+        <div>
+            <div ui-view="fixedLogo"></div>
+        </div>
+        <picture-hider  images="images"></picture-hider>
+        <div>
+            <div ui-view="about"></div>
+        </div>
+        
+     </div>
+        
+        <div ui-view></div>
+        <footer>
+            <a name="bot">
+        <div id="map-canvas">
+            <script type="text/javascript">
+
+                    var map;
+                    function initMap() {
+                    map = new google.maps.Map(document.getElementById('map-canvas'), {
+                        center: {lat: 32.762220, lng: -117.067183},
+                        zoom: 16
+                    });
+                    var marker = new google.maps.Marker({
+                    position: {lat: 32.762220, lng: -117.067183},
+                    map: map,
+                    title: 'Hello World!'
+                    });
+                    marker.setMap(map);
+                }
+        
+            </script>
+            </div>
+        <div class='lower-contact'>
+            
+            <contact-hider></contact-hider>
+                <!--<div id="map-canvas">
+            <script type="text/javascript">
+
+                    var map;
+                    function initMap() {
+                    map = new google.maps.Map(document.getElementById('map-canvas'), {
+                        center: {lat: 32.762220, lng: -117.067183},
+                        zoom: 16
+                    });
+                    var marker = new google.maps.Marker({
+                    position: {lat: 32.762220, lng: -117.067183},
+                    map: map,
+                    title: 'Hello World!'
+                    });
+                    marker.setMap(map);
+                }
+        
+            </script>
+            </div>-->
+            <!--<button ui-sref="login">Login</button>-->
+    
+        </footer>
+         
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqD8reaekJrEafZxAFg2Mt-6CIVIe1Fs8&callback=initMap">
+        </script>
+        <script src="js/app.js"></script>
+        <script src="js/control/menuCtrl.js"></script>
+        <script src="js/service/menuService.js"></script>
+        <script src="js/service/pictureSlider.js"></script>
+        <script src="js/directive/pictureHider.js"></script>
+        <script src="js/control/menusCtrl.js"></script>
+        <script src="js/control/login-ctrl.js"></script>
+        <script src="js/control/signup-ctrl.js"></script>
+        <script src="js/service/user-service.js"></script>
+        <script src="js/directive/googleMap.js"></script>
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+</html>

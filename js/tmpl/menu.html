@@ -1,0 +1,38 @@
+<div class="menu">
+    <div><h1 class="menu-title">Menu</h1></div>
+    <div ui-sref="home" class="xhome"> X</div>
+    <form name="newFoodItem" class="menu-input">
+        <input type="text" ng-model="newFoodObject" placeholder="title">
+        <br>
+        <input type="text" ng-model="description" placeholder="description">
+        <input type="text" ng-model="price" placeholder="price">
+        <button ng-disabled="newFoodItem.$invalid" ng-click="addMenu(newFoodObject, description, price)">Add Food</button>
+        
+        
+        
+        
+    </form>
+        <!--<a ng-href="#/menu/{{menus.$id}}">-->
+        <ul>
+            <li ng-repeat="food in menu" class="food">
+                <!--<a ng-href="#/menu/{{menus.$id}}">-->
+                {{food.title}}
+                <br>
+                <br>
+                {{food.description}}........................................
+                {{food.price}}
+            </li>
+            
+            
+        </ul>
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+</div>

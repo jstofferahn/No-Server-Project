@@ -1,0 +1,18 @@
+<div>
+    <h2>{{menus.title}} 
+        <br>
+        {{menus.description}} {{menus.price}}</h2>
+   <div>
+       <form name="newDescription">
+           <input type="text" ng-model="newDescTitle" placeholder="new title">
+           <input type="text" ng-model="description" placeholder="description">
+           <input type="text" ng-model="price" placeholder="price">
+           <button ng-disabled="newDescription.$invalid" ng-click="createDescription(newDescTitle, description, price)"></button>
+       </form>
+       <ul>
+           <li ng-repeat="foods in description">{{foods.title}}
+                {{foods.description}}
+                {{foods.price}}</li>
+       </ul>
+   </div>
+</div>

@@ -1,0 +1,18 @@
+<div >
+    
+   <div class="slide"> 
+        <img ng-repeat="image in images" ng-src="{{image.image}}" class="slider slide-animation"
+        ng-hide="!isCurrentSlideIndex($index)" ng-swipe-right="prevSlide()" ng-swipe-left="nextSlide()">
+        
+        
+    </div>
+     <a class="arrowprev" href="#" ng-click="prevSlide()"><img src="http://s24.postimg.org/5x7kxtszl/leftarrow.png" ></a>
+
+       <a class="arrownext" href="#" ng-click="nextSlide()"><img src="http://s12.postimg.org/menms9uux/play128_1.png" ></a>
+   
+  
+
+    
+    
+    
+</div>

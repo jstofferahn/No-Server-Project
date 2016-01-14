@@ -1,0 +1,13 @@
+<div>
+	<div class="signupForm">
+		Email: <input type="text" ng-model="newUser.email" class="s-email"/>
+	</div>
+	<div>
+		Username: <input type="text" ng-model="newUser.username" class="s-username"/>
+	</div>
+	<div>
+		Password: <input type="password" ng-model="newUser.password" class="s-password"/>
+	</div>
+	<button  ng-click="register()" class="s-button">Register</button>
+	<a ui-sref="login">Login instead</a>
+</div>
